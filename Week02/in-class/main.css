@@ -1,11 +1,12 @@
 @media screen and (max-width: 480px) {
     body {
-        background-color: red;
+        background-color: rgb(80, 80, 80);
+        color: white;
     }
 }
 
 @media screen and (min-width: 480px) {
     body {
-        background-color: blue;
+        background-color: white;
     }
 }
