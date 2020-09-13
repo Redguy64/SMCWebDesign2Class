@@ -1,12 +1,29 @@
 @media screen and (max-width: 480px) {
     body {
         background-color: rgb(80, 80, 80);
+        color: black;
+    }
+    p {
+        background-color: white;
+        padding: 6px;
+        font-family: 'Raleway', sans-serif;
+    }
+    h2 {
         color: white;
+        font-family: 'Lora', serif;
     }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
     body {
-        background-color: white;
+        background-color: lightgray;
+    }
+    p {
+        background-color: darkgray;
+        padding: 6px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    h2 {
+        font-family: 'Bitter', serif;
     }
 }
