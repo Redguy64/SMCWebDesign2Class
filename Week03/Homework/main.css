@@ -22,7 +22,7 @@ img.toggle-img {
     width: 40px;
 }
 
-input#Toggle{
+input#Toggle {
     display: none;
 }
 
@@ -30,7 +30,7 @@ label[for="Toggle"] {
     float: right;
 }
 
-input#Toggle:checked + ul {
+input#Toggle:checked+ul {
     display: block;
 }
 
@@ -57,22 +57,29 @@ nav ul a {
     font-size: 20px;
 }
 
-@media(max-width: 480px){
-    body{
-        background-color: lightgray;
+.post {
+    padding: 15px;
+    margin: 4px;
+}
+
+@media(max-width: 480px) {
+    body {
+        background-color: gray;
     }
+
     div {
         background-color: white;
         margin: 4px;
         padding: 2px 1px 2px 1px;
     }
+
     header {
         background-color: darkred;
     }
 }
 
-@media(min-width: 768px){
-    label[for="Toggle"]{
+@media(min-width: 768px) {
+    label[for="Toggle"] {
         display: none;
     }
 
@@ -89,11 +96,11 @@ nav ul a {
         padding: 10px 0px;
     }
 
-    body{
+    body {
         background-color: gray;
     }
 
-    header{
+    header {
         background-color: darkgreen;
         color: white;
     }
