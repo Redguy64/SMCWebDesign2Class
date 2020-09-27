@@ -42,20 +42,26 @@ nav ul li {
 
     .order-lrg-1 {
         order: 1;
+        float: left;
     }
     .order-lrg-2 {
         order: 2;
+        float: left;
     }
     .order-lrg-3 {
-        order: 3;
+        order: 6;
+        float: left;
     }
     .order-lrg-4 {
-        order: 4;
+        order: 3;
+        float: left;
     }
     .order-lrg-5 {
-        order: 5;
+        order: 4;
+        float: left;
     }
     .order-lrg-6 {
-        order: 6;
+        order: 5;
+        float: left;
     }
 }
