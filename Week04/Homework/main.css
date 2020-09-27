@@ -1,0 +1,32 @@
+@import url("colors.css");
+@import url("navbar.css");
+
+body {
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+@media (min-width: 768px) {
+    .w-33 {
+        max-width: 33.33%;
+        float: left;
+    }
+
+    .w-70 {
+        max-width: 70%;
+        float: left;
+    }
+
+    .w-30 {
+        max-width: 30%;
+        float: left;
+    }
+}
