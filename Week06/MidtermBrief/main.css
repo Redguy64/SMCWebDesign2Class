@@ -1,0 +1,52 @@
+@import url(navbar.css);
+@import url(colors.css);
+@import url(contactpage.css);
+
+/* Tablet Design */
+#Placeholder {
+    max-width: 30%;
+    float: left;
+    padding: 10px;
+}
+
+p {
+    padding: 10px;
+}
+
+.Image {
+    max-width: 30%;
+    padding: 10px;
+}
+
+/* Mobile Design */
+@media(max-width: 480px) {
+    #Placeholder {
+        max-width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    
+    .Image {
+        max-width: 30%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+}
+
+/* Desktop Design */
+@media(min-width: 768px) {
+    #Placeholder {
+        max-width: 25%;
+        float: left;
+        padding: 10px;
+    }
+
+    .Image {
+        max-width: 30%;
+        padding: 10px;
+    }
+}
