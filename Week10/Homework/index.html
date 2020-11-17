@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="navbar.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <style>
+        #colorField {
+            height: 400px;
+            background-color: rgb(0, 26, 255);
+        }
+
+        form {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<header>
+    <nav>
+        <a href="index.html"><img src="PlaceholderLogo.png" alt="Logo" class="Logo"></a>
+
+        <label for="Toggle">
+            <img src="UpArrow.png" alt="UpArrow" id="imageToggle" />
+        </label>
+        <input type="checkbox" id="Toggle">
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Contact</a></li>
+            <li><a href="index.html">Products</a></li>
+
+        </ul>
+    </nav>
+</header>
+<main>
+
+    <body>
+        <!-- The grid: four columns -->
+        <div class="row">
+            <div class="column">
+                <img class="SmallImage" src="Nature.jpg" alt="Lake" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img class="SmallImage" src="Snow.jpg" alt="Snow" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img class="SmallImage" src="Mountain.jpg" alt="Mountain" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img class="SmallImage4" src="City.jpg" alt="City" onclick="myFunction(this);">
+            </div>
+        </div>
+
+        <!-- The expanding image container -->
+        <div class="container">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none' " class="closebtn">X</span>
+
+            <!-- Expanded image -->
+            <img id="expandedImg" style="width:100%">
+
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+
+        <script src="scripts.js"></script>
+    </body>
+</main>
+
+</html>
