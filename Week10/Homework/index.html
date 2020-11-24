@@ -23,7 +23,7 @@
         <a href="index.html"><img src="PlaceholderLogo.png" alt="Logo" class="Logo"></a>
 
         <label for="Toggle">
-            <img src="UpArrow.png" alt="UpArrow" id="imageToggle" />
+            <img src="UpArrow.png" alt="Nav-Toggle" id="ArrowButton" />
         </label>
         <input type="checkbox" id="Toggle">
 
@@ -67,7 +67,25 @@
             <div id="imgtext"></div>
         </div>
 
-        <script src="scripts.js"></script>
+        <script src="scripts.js">
+            let toggleIMG = document.getElementById("ArrowButton");
+            let imageBTN = document.getElementById("Toggle");
+
+            let imageToggle = function () {
+
+                if (toggleIMG.alt === "Nav-Toggle") {
+                    //do stuff
+                    toggleIMG.src = "DownArrow.Png";
+                    toggleIMG.alt = "Nav-Toggle2";
+                } else {
+                    //do other stuff
+                    toggleIMG.src = "UpArrow.png";
+                    toggleIMG.alt = "Nav-Toggle";
+                }
+            }
+
+            toogleIMG.addEventListener("click", imageToggle);
+        </script>
     </body>
 </main>
 

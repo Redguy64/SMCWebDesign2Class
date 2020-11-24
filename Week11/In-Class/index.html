@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="carousel">
+        <img src="quokkas1.jpg" alt="qute quokka 1" id="carouselIMG">
+    </div>
+
+    <script>
+        let carousel = document.getElementById("carousel");
+        let carouselIMg = document.getElementByID("CarouselIMG");
+
+        let img1 = "quokkas1.jpg";
+        let img2 = "quokkas2.jpg";
+        let img3 = "quokkas3.jpg";
+
+        let imgChange = function(){
+            if(carouselIMG.alt === "qute quokka 1"){
+                carouselIMG.src = "quokka2.jpg"
+                carouselIMG.alt = "qute quokka 2"
+            };
+        }
+
+        let subscribeRequest = function(){
+            prompt("Give us your email or else!!", "myemail.com");
+        }
+
+        window.addEventListener("load", function(){
+            setTimeout(subscribeRequest, 4000);
+
+        })
+    </script>
+</body>
+</html>

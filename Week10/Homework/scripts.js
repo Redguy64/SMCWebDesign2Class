@@ -11,16 +11,21 @@ function myFunction(imgs) {
     expandImg.parentElement.style.display = "block";
 }
 
+let toggleIMG=document.getElementById("ArrowButton");
+let imageBTN = document.getElementById("Toggle");
+
 let imageToggle = function(){
 
-    if(toggleIMG.alt === "DownArrow"){
+    if(toggleIMG.alt === "Nav-Toggle"){
         //do stuff
         toggleIMG.src = "DownArrow.Png";
-        toggleIMG.alt = "DownArrow";
+        toggleIMG.alt = "Nav-Toggle2";
     }
     else {
         //do other stuff
        toggleIMG.src = "UpArrow.png";
-       toggleIMG.alt = "UpArrow";
+       toggleIMG.alt = "Nav-Toggle";
     }
 }
+
+toogleIMG.addEventListener("click", imageToggle);
