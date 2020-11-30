@@ -1,16 +1,13 @@
 let carousel = document.getElementById("carousel");
 let carouselIMG = document.getElementById("carouselIMG");
 
-let images = [
-    "quokkas1.jpg",
-    "quokkas2.jpg",
-    "quokkas3.jpg"
-]
+let catSelect = document.getElementById("category");
+let subSelect = document.getElementById("subcategory");
 
-let images3 = [
-    "quokkas1.jpg",
-    "quokkas2.jpg",
-    "quokkas3.jpg"
+let images1 = [
+    "kitten1.jpg",
+    "kitten2.jpg",
+    "kitten3.jpg"
 ]
 
 let images2 = [
@@ -19,22 +16,22 @@ let images2 = [
     "puppies3.jpg"
 ]
 
-let images1 = [
-    "kitten1.jpg",
-    "kitten2.jpg",
-    "kitten3.jpg"
-]
-
-let images5 = [
-    "mountains1.jpg",
-    "mountains2.jpg",
-    "mountains3.jpg"
+let images3 = [
+    "quokkas1.jpg",
+    "quokkas2.jpg",
+    "quokkas3.jpg"
 ]
 
 let images4 = [
     "lake1.jpg",
     "lake2.jpg",
     "lake2.jpg"
+]
+
+let images5 = [
+    "mountain1.jpg",
+    "mountain2.jpg",
+    "mountain3.jpg"
 ]
 
 let images6 = [
@@ -51,47 +48,27 @@ let imgChange = function () {
     if (counter === 3) {
         counter = 0
     }
-    carouselIMG.src = images[counter];
 
     if (subSelect.value === "kittens") {
-        counter = 0
         carouselIMG.src = images1[counter];
     }
-
-    if (subSelect.value === "puppies") {
-        counter = 0
+    else if (subSelect.value === "puppies") {
         carouselIMG.src = images2[counter];
     }
-
-    if (subSelect.value === "quokkas") {
-        counter = 0
+    else if (subSelect.value === "quokkas") {
         carouselIMG.src = images3[counter];
     }
-
-    if (subSelect.value === "lakes") {
-        counter = 0
+    else if (subSelect.value === "lakes") {
         carouselIMG.src = images4[counter];
     }
-
-    if (subSelect.value === "mountains") {
-        counter = 0
+    else if (subSelect.value === "mountains") {
         carouselIMG.src = images5[counter];
     }
-
-    if (subSelect.value === "forests") {
-        counter = 0
+    else if (subSelect.value === "forests") {
         carouselIMG.src = images6[counter];
     }
 
 }
-
-
-window.addEventListener("load", function () {
-    setInterval(imgChange, 1000);
-})
-
-let catSelect = document.getElementById("category");
-let subSelect = document.getElementById("subcategory");
 
 let categoryUpdate = function () {
     let animSubcats = ["kittens", "puppies", "quokkas"];
@@ -107,7 +84,8 @@ let categoryUpdate = function () {
             opt.innerText = elem;
             subSelect.appendChild(opt);
         })
-    } else if (catSelect.value === "nature") {
+    } 
+    else if (catSelect.value === "nature") {
         console.log("nature");
         natureSubcats.forEach(function (elem) {
             let opt = document.createElement("option");
@@ -118,4 +96,13 @@ let categoryUpdate = function () {
     }
 }
 
+
+
+window.addEventListener("load", function () {
+    categoryUpdate();
+    setInterval(imgChange, 3000);
+})
 catSelect.addEventListener("change", categoryUpdate);
+subSelect.addEventListener("change", function(){
+    counter = 0;
+})
