@@ -6,7 +6,7 @@
     row-gap: 10px;
     column-gap: 10px;
     margin: auto;
-    max-width: 500px;
+    max-width: 750px;
 }
 
 .grid-item1 {
@@ -22,7 +22,7 @@
     row-gap: 0px;
     column-gap: 10px;
     margin: auto;
-    max-width: 500px;
+    max-width: 750px;
 }
 
 .grid-item-1 {
