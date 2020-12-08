@@ -32,7 +32,7 @@
         <div class="row">
             <div class="col-75">
                 <div class="container">
-                    <form action="GET">
+                    <form>
 
                         <div class="row">
                             <div class="col-50">
@@ -68,8 +68,14 @@
                 </div>
 
             </div>
-            <button class="btn">Send Donation</button>
+            <button class="btn" id="DonateButton">Send Donation</button>
             </form>
+            <script src="https://code.jquery.com/jquery-3.5.1.js">
+                $(document).ready (function(){
+                    $('form').submit (function(event){ event.preventDefault();})
+                    $("DonateButton").click(function(){window.alert("Thank you for Donating")})
+                }); 
+            </script>
         </div>
         </div>
     </main>
