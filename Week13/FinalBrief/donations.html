@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="navbar.css" rel="stylesheet">
+    <link href="donations-css.css" rel="stylesheet">
+    <link href="grid-donations.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="CCFLogo.svg" alt="Logo" class="nav-logo"></a>
+
+            <label for="Toggle">
+                <img src="https://static.thenounproject.com/png/659803-200.png" alt="menu toggle" class="toggle-img">
+            </label>
+            <input type="checkbox" id="Toggle">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="donations.html">Donations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="Margin">
+        <div class="row">
+            <div class="col-75">
+                <div class="container">
+                    <form action="GET">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Donation Information</h3>
+                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                <input type="text" id="email" name="email" placeholder="john@example.com">
+                            </div>
+                        </div>
+
+
+                        <div class="row col-50">
+                            <h3>Donation</h3>
+                            <input type="text" id="don" name="Donation" placeholder="$100.00">
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="2018">
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="352">
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+            <button class="btn">Send Donation</button>
+            </form>
+        </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

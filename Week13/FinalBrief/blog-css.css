@@ -1,0 +1,15 @@
+.reply {
+    padding-left: 40px;
+}
+
+.margin {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+@media (max-width: 480px) {
+    .margin {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

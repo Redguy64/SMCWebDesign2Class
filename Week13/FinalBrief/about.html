@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="navbar.css" rel="stylesheet">
+    <link href="about-css.css" rel="stylesheet">
+    <link href="grid-about.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="CCFLogo.svg" alt="Logo" class="nav-logo"></a>
+
+            <label for="Toggle">
+                <img src="https://static.thenounproject.com/png/659803-200.png" alt="menu toggle" class="toggle-img">
+            </label>
+            <input type="checkbox" id="Toggle">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="donations.html">Donations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="grid-container2">
+            <div class="grid-item1">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam corrupti esse laborum quo nulla aliquam iusto voluptatibus distinctio nihil molestias. Est voluptatibus aliquid vel asperiores dolor incidunt quos voluptatum optio.</p>
+            </div>
+        </div>
+
+        <!-- The grid: four columns/images -->
+        <div class="row PicMargin">
+            <div class="column">
+                <img class="SmallImage" src="Nature.jpg" alt="Lake" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img class="SmallImage" src="Snow.jpg" alt="Snow" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img class="SmallImage" src="Mountain.jpg" alt="Mountain" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img class="SmallImage4" src="City.jpg" alt="City" onclick="myFunction(this);">
+            </div>
+        </div>
+
+        <!-- The expanding image container/expanded Image -->
+        <div class="container">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none' " class="closebtn">X</span>
+
+            <!-- Expanded image -->
+            <img id="expandedImg" style="width:100%">
+
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+
+        <script src="about-scripts.js">
+            let toggleIMG = document.getElementById("ArrowButton");
+            let imageBTN = document.getElementById("Toggle");
+
+            let imageToggle = function () {
+
+                if (toggleIMG.alt === "Nav-Toggle") {
+                    //do stuff
+                    toggleIMG.src = "DownArrow.Png";
+                    toggleIMG.alt = "Nav-Toggle2";
+                } else {
+                    //do other stuff
+                    toggleIMG.src = "UpArrow.png";
+                    toggleIMG.alt = "Nav-Toggle";
+                }
+            }
+
+            toogleIMG.addEventListener("click", imageToggle);
+        </script>
+
+        <div class="grid-container">
+            <div class="grid-item-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, et enim eveniet quas quam magni
+                    animi accusantium debitis. Aperiam molestiae, architecto sequi nulla nesciunt exercitationem quod
+                    obcaecati in consequuntur! Quas? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
+                    ipsum libero reprehenderit eaque mollitia soluta itaque provident nihil accusamus alias repellat quo
+                    at labore dolorum consequuntur repudiandae odio dolore placeat. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quia iure, suscipit esse itaque necessitatibus neque eius corporis
+                    aliquid veritatis eos quaerat perspiciatis laborum laudantium aliquam magnam minima hic tempore.
+                    Dicta.</p>
+            </div>
+            <div class="grid-item-2">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum incidunt maxime explicabo tempore atque
+                    cupiditate odio tempora adipisci delectus dolor ratione optio, architecto consequatur assumenda iste
+                    suscipit laboriosam laudantium possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit, vero amet facilis sed neque enim et eius commodi hic architecto tempora repellat tenetur,
+                    molestias, illum numquam velit porro provident vitae. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Suscipit voluptate laudantium tempore voluptatem minus recusandae, est magni quasi
+                    minima enim iste porro ab quidem amet excepturi, rerum labore, explicabo sed!</p>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
