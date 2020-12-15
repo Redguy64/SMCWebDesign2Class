@@ -1,0 +1,128 @@
+/* Tablet Design */
+body {
+    margin: 0px
+}
+
+header {
+    background-color: #0077ff;
+    padding: 10px;
+    padding-bottom: 25px;
+}
+
+div {
+    margin: 4px;
+    padding: 10px;
+    background-color: beige;
+}
+
+img.nav-logo {
+    max-width: 100%;
+    width: 190px;
+}
+
+img.toggle-img {
+    width: 40px;
+}
+
+input#Toggle {
+    display: none;
+}
+
+label[for="Toggle"] {
+    float: right;
+}
+
+input#Toggle:checked+ul {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 20px 0px 0px;
+    display: none;
+}
+
+nav ul li {
+    padding: 20px 0px;
+    border-bottom: 1px solid white;
+}
+
+nav ul li :hover {
+    color: #78b643;
+    text-decoration: underline;
+}
+
+nav ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+.post {
+    padding: 30px;
+    margin: 4px;
+}
+
+/* Mobile Design */
+@media(max-width: 480px) {
+    div {
+        background-color: beige;
+        margin: 4px;
+        padding: 10px;
+    }
+
+    header {
+        background-color: #0077ff;
+    }
+}
+
+/* Desktop Design */
+@media(min-width: 768px) {
+    label[for="Toggle"] {
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+        float: right;
+        padding: 0px;
+        padding-top: 40px;
+    }
+
+    nav ul li {
+        border: none;
+        display: inline-block;
+        margin-right: 20px;
+        padding: 10px 0px;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+    }
+
+    div {
+        margin: 4px;
+        padding: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: beige;
+    }
+
+    header {
+        background-color: #0077ff;
+        padding-bottom: 10px;
+    }
+
+    body {
+        background-color: white;
+    }
+}

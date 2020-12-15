@@ -1,0 +1,39 @@
+.placeholder {
+    max-width: 30%;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    padding-right: 60px;
+}
+
+.GreenText {
+    padding-left: 25px;
+}
+
+#carouselIMG {
+    max-width: 95%;
+}
+
+h1, h2, h3 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+nav ul li a {
+    font-family: 'PT Sans', sans-serif;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+}
+
+/** Mobile Design **/
+@media(max-width: 480px) {
+    .placeholder {
+        max-width: 100%;
+    }
+}

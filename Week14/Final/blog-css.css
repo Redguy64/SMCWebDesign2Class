@@ -1,0 +1,58 @@
+.reply {
+    padding-left: 40px;
+}
+
+.margin {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+p, h1, h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.MiniPicture {
+    max-width: 10%;
+    float: left;
+}
+
+.MiniPicture2 {
+    max-width: 5%;
+    float: left;
+}
+
+#replies-hide {
+    display: none;
+}
+
+h1, h2, h3 {
+    font-family: 'PT Sans', sans-serif;
+    padding-left: 40px;
+}
+
+nav ul li a {
+    font-family: 'PT Sans', sans-serif;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+    padding-left: 40px;
+}
+
+@media (max-width: 480px) {
+    .margin {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .MiniPicture {
+        max-width: 30%;
+        float: left;
+    }
+
+    .MiniPicture2 {
+        max-width: 15%;
+        float: left;
+    }
+}

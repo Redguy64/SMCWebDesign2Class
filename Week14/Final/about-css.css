@@ -1,0 +1,97 @@
+.Logo {
+    max-width: 10%;
+}
+
+#ArrowButton {
+    max-width: 20%;
+}
+
+/* CSS and Javascript for this file were refrenced from w3schools and a small post on a website to make the images toggle-able*/
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 22%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+    max-width: 60%;
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: black;
+    font-size: 35px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  .SmallImage {
+      max-width: 80%;
+  }
+
+  .SmallImage4 {
+      max-width: 70%;
+  }
+
+.PicMargin {
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.SquarePhoto {
+  max-width: 45%;
+  padding: 0px;
+}
+
+h1, h2, h3 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+nav ul li a {
+  font-family: 'PT Sans', sans-serif;
+}
+
+p {
+  font-family: 'Rubik', sans-serif;
+}
+
+@media (max-width: 480px) {
+  .PicMargin {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
